@@ -11,7 +11,11 @@ const Homepage = ({
     setSelectedSubregion,
     sortCriteria,
     setSortCriteria,
-    subregions
+    subregions,
+    currency,
+    setCurrency,
+    language,
+    setLanguage
 }) => (
     <>
         <Filter
@@ -24,6 +28,10 @@ const Homepage = ({
             sortCriteria={sortCriteria}
             setSortCriteria={setSortCriteria}
             subregions={subregions}
+            currency={currency}
+            setCurrency={setCurrency}
+            language={language}
+            setLanguage={setLanguage}
         />
         <Countries
             countries={countries}
@@ -31,6 +39,8 @@ const Homepage = ({
             selectedRegion={selectedRegion}
             selectedSubregion={selectedSubregion}
             sortCriteria={sortCriteria}
+            currency={currency}
+            language={language}
         />
     </>
 );

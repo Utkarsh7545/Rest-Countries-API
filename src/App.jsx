@@ -11,6 +11,8 @@ const App = () => {
   const [selectedRegion, setSelectedRegion] = useState('All');
   const [selectedSubregion, setSelectedSubregion] = useState('All');
   const [sortCriteria, setSortCriteria] = useState('none');
+  const [currency, setCurrency] = useState('All');
+  const [language, setLanguage] = useState('All');
 
   const [darkMode, setDarkMode] = useState(false);
 
@@ -64,6 +66,10 @@ const App = () => {
               sortCriteria={sortCriteria}
               setSortCriteria={setSortCriteria}
               subregions={subregions}
+              currency={currency}
+              setCurrency={setCurrency}
+              language={language}
+              setLanguage={setLanguage}
             />
           }
         />
